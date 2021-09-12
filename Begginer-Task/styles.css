@@ -445,4 +445,16 @@ button {
         width: 76%;
         left: 6%;
     }
+    
+    .life-at-section {
+        display: none;
+    }
+
+    .contact-section .form-control, .contact-section .input-group {
+        width: 100% !important;
+    }
+
+    footer {
+        padding: 50px 0 !important;
+    }
 }
