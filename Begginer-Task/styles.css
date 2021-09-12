@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* General */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rebeccapurple; */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+/* Navbar */
+
+.nav-scroll-color {
+    background-color: #000;
+}
+
+.navbar-toggler {
+    border: 2px solid #fff;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1.8px;
+}
+
+.navbar-brand:hover {
+    color: #fff;
+}
+
+.nav-link {
+    margin-right: 30px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-item.active .nav-link, .nav-link:hover {
+    color: yellow;
+}
+
+.hero-section .carousel-inner img {
+    height: 80vh;
+}
+
+.hero-section .carousel-caption {
+    width: 32%;
+    right: 0;
+    top: 25%;
+    bottom: 0;
+}
+
+.hero-section .carousel-caption p {
+    color: #dedede;
+}
+
+.hero-section .carousel-caption-buttons button:nth-child(1) {
+    background-color: yellow;
+}
+
+.hero-section .carousel-caption-buttons button:nth-child(2) {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.home-about {
+    font-weight: 900;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.home-about h3 {
+    color: darkgray;
+}
+
+.home-about img {
+    text-align: center;
+}
+
+.home-about .card i {
+    padding: 20px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    margin: auto;
+    color: #fff;
+    font-size: 40px;
+}
+
+.home-about .card {
+    border: none;
+    background-color: transparent;
+    color: darkgray;
+}
+
+.home-about .card-body h5 {
+    color: rebeccapurple;
+    text-transform: uppercase;
+}
+
+.home-about-cards .col-lg-4 button {
+    background-color: yellow;
+}
+
+.home-about-cards .col-lg-4:nth-child(1) button {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.home-about-cards::after {
+    content: "";
+    height: 2px;
+    background-color: grey;
+    width: 70%;
+    position: absolute;
+    left: 11%;
+    right: 0;
+    bottom: 0;
+}
+
+/* About */
+.project-section .row, .team-section .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.projects-cards .col-lg-3 {
+    padding: 0;
+}
+
+.projects-cards .col-lg-3 .card {
+    padding: 0 0 1.25rem 0;
+    border: none;
+    border-radius: 0;
+    color: #535353;
+    background-color: #ddd;
+}
+
+.projects-cards .card h5 {
+    color: #000;
+}
+
+.projects-cards .card button {
+    background-color: #fff;
+}
+
+
+.projects-cards .col-lg-3:nth-child(2) .card button {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.projects-cards .col-lg-3:nth-child(2) .card {
+    background-color:#FFC300 !important;
+}
+
+
+/* Pricing */
+
+.pricing-card, .team-card {
+    position: relative;
+}
+
+.pricing-card:not(:last-child):before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    background-color: #6c757d;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.pricing-card p {
+    margin: 5px 0;
+}
+
+.pricing-card:nth-child(1) button {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+.pricing-card button {
+    background-color: yellow;
+    margin-top: 20px;
+}
+
+/* Video Portfolio */
+.video-section {
+    background-color: rebeccapurple;
+}
+
+/* Team */
+
+.team-card {
+    cursor: pointer;
+}
+
+.team-card img {
+    position: relative;
+}
+
+.team-card .overlay {
+    display: none;
+    background-color: rebeccapurple;
+    top: 12%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    opacity: .5;
+    right: 0;
+    left: 25%;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.team-card img {
+    height: 50%;
+    width: 55%;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.team-card:hover img {
+    opacity: 0.5;
+}
+
+.team-card .social ul {
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    display: none !important;
+}
+
+.team-card .social ul li {
+    margin-right: 30px;
+}
+
+.team-card .social ul li i {
+    font-size: 25px;
+}
+
+.team-card:hover .overlay {
+    display: block;
+}
+
+.team-card:hover ul {
+    display: flex !important;
+}
+
+.team-card:hover ul li a:hover {
+    color: rebeccapurple;
+}
+
+/* Life at zippy */
+.life-at-section
+{
+    background-color:#dedede;
+}
+
+.featured-image {
+    height: 30rem;
+    max-height: 500px;
+    max-height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.slider-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.slider-arrow:nth-of-type(1) {
+    margin-right: 10px;
+}
+
+.slider-arrow:nth-of-type(2) {
+    margin-left: 10px;
+}
+
+.slider-arrow .fa {
+    color: #fff;
+}
+
+.slider-arrow:hover {
+    background-color: rebeccapurple;
+}
+
+.slide-wrapper
+{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    max-width: 700px;
+    width: 600px;
+    min-height: 200px;
+    transition: all .3s ease;
+}
+
+.slider-div
+{
+    width: 800rem;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+#slider::-webkit-scrollbar
+{
+    display:none;
+}
+
+.thumbnail
+{
+    object-fit: cover;
+    max-width: 110px;
+    max-height: 500px;
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 5px;
+    transition: all .3s ease;
+}
+
+.thumbnail:hover
+{
+    opacity: 1;
+    transform: scale(2);
+}
+
+
+/* Newsletter */
+.newsletter-section {
+    background-image: url('./img/newsletter-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+}
+
+.newsletter-section input {
+    width: 50%;
+}
+
+.newsletter-section .form-control {
+    padding: 1rem .75rem !important;
+    height: auto;
+}
+
+.newsletter-section button {
+    padding: 1rem 3rem;
+}
+
+.newsletter-section button:nth-child(1) {
+    background-color: yellow;
+}
+
+.newsletter-section button:nth-child(2) {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+/* Blog */
+.blog-section .card {
+    border: none;
+    border-radius: 0;
+}
+
+.blog-section .card-img-top {
+    border-radius: 0;
+}
+
+.blog-section .col-lg-4:nth-child(1) button {
+    background-color: yellow;
+}
+
+.blog-section button {
+    background-color: #dedede;
+    padding: .375rem 2rem;
+}
+
+/* Contact */
+.contact-section .input-group {
+    width: 50%;
+}
+
+.contact-section button {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
+/* Footer */
+.footer-section li:not(:first-child) {
+    margin-left: 30px;
+}
+
+.footer-section li a, .footer-section li a:hover {
+    color: #000 !important;
+}
+
+/* Responsive */
+@media(max-width:767px) {
+    .card {
+        width: 100% !important;
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:1024px) {
+    .pricing-card {
+        margin-right: 0;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .pricing-card:not(:last-child):before {
+        content: none;
+    }
+
+    .hero-section .carousel-caption {
+        display: block !important;
+        width: 76%;
+        left: 6%;
+    }
+}
