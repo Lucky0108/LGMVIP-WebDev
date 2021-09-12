@@ -143,6 +143,16 @@ button {
     padding: 0;
 }
 
+.projects-cards .card:hover {
+    background-color: #FFC300 !important;
+
+}
+
+.projects-cards .card:hover button {
+    background-color: rebeccapurple;
+    color: #fff;
+}
+
 .projects-cards .col-lg-3 .card {
     padding: 0 0 1.25rem 0;
     border: none;
