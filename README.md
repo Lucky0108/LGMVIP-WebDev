@@ -27,4 +27,4 @@ Tech Stack Used:- <br> <br>
  - ReactJS
  
 <h3> Live Demo </h3>
-<p>Visit the Live Site at:- </p>
+<p>Visit the Live Site at:- https://lgm-task-2.netlify.app/ </p>
