@@ -10,7 +10,7 @@ Tech Stack Used:- <br> <br>
  - Jquery
 
 <h3> Live Demo </h3>
-<p>Visit the Live Site at:- https://lgm-zippy.netlify.app/ </p>
+<p>Visit the Live Site at:- https://lgm-beginner-zippy.netlify.app/ </p>
 <br> <hr>
 <br>
 <h1> Task 2</h1> <br>
